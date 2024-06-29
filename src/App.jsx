@@ -2,7 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 function App() {
-	return <h1>Olá, Mundo!</h1>;
+	return (
+    <div>
+      <form>
+        <input type="text" name="" id="" placeholder="Cidade" />
+      </form>
+    </div>
+  );
 }
 
 export default App;
