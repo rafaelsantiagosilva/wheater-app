@@ -1,14 +1,25 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 
 function App() {
 	return (
-    <div>
-      <form>
-        <input type="text" name="" id="" placeholder="Cidade" />
-      </form>
-    </div>
-  );
+		<div className="flex w-full h-screen items-center justify-center">
+			<form>
+				<input
+					type="text"
+					name="inpcity"
+					id="inpcity"
+					placeholder="Cidade"
+					className="p-3 rounded-md outline-none"
+				/>
+				<button
+					type="submit"
+					className="bg-blue-600 p-3 rounded-md ml-3 text-white font-bold hover:bg-blue-500"
+				>
+					Pesquisar
+				</button>
+			</form>
+		</div>
+	);
 }
 
 export default App;
