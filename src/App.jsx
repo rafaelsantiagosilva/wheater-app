@@ -9,9 +9,12 @@ function App() {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		fetchData(city).then((res) => {
-			setData(res);
-		});
+
+		if (city.trim()) {
+			fetchData(city).then((res) => {
+				setData(res);
+			});
+		}
 	};
 
 	return (
